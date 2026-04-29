@@ -19,7 +19,7 @@ hr {
 }
 
 .img-fundo {
-    background-image: url('/img/imgfundo.png');
+    background-image: url('../img/imgfundo.png');
     background-size: cover;
     background-position: center;
 }
