@@ -4,139 +4,312 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <section>
-            <span>Sobre</span> <span>Skills</span> <span>Experiência</span> <span>Certificações</span> <span>Idiomas</span>
-    </section>
-    <hr>
-    <section>
-        <h1>Gustavo Caldeira</h1>
-    <p>Desenvolvedor Java • Estudante de Engenharia de Software</p>
-    <p>Focado em desenvolvimento de sistemas e soluções tecnológicas. Experiência com Java, Web Development (Html, CSS e JavaScript), SQL e metodologias ágeis. Sempre buscando aprender e contribuir para projetos desafiadores.</p>
-    <button>Entrar em Contato</button> <button>GitHub</button>
+    <section class="img-fundo">
+            <section class="section-header">
+                <nav class="meu-menu">
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </section>
+        <hr>
+
+            <section class="section-hero">
+                <h1>Gustavo Caldeira</h1>
+                <p class="tagline">Desenvolvedor Java • Estudante de Engenharia de Software</p>
+                <p class="descricao">Focado em desenvolvimento de sistemas e soluções tecnológicas. Experiência com Java, Web Development (Html, CSS e JavaScript), SQL e metodologias ágeis. Sempre buscando aprender e contribuir para projetos desafiadores.</p>
+                <div class="div-botoes">
+                    <a href="#contato" class="btn-contato">Entre em Contato</a>
+                    <a href="https://github.com/guscaldeira" target="_blank" rel="external" class="btn-github">
+                    <i class="fab fa-github"></i> GitHub </a>
+                </div>
+            </section>
     </section>
     <hr>
 
-    <section>
-        <h2>Sobre Mim</h2>
-        <h3>Formação Acadêmica</h3>
-        <div>
-            <p>Bacharelado em Engenharia de Software</p>
-            <p>Universidade Católica do Salvador (UCSAL)</p>
-            <p>Previsão de Conclusão: Dezembro de 2028</p>
+    <section class="secao-sobre">
+        <h2 class="titulo-principal">Sobre Mim</h2>
+        <div class="sobre-conteudo-flex">
+            <div class="card-sobre">
+                <h3 class="titulo-icone">
+                    <i class="fas fa-book-open"></i>Formação Acadêmica
+                </h3>
+                <div class="card-corpo">
+                    <p class="destaque-azul">Bacharelado em Engenharia de Software</p>
+                    <p>Universidade Católica do Salvador (UCSAL)</p>
+                    <p>Previsão de Conclusão: Dezembro de 2028</p>
+                </div>
+            </div>
+            <div class="card-sobre">
+                <h3 class="titulo-icone">
+                    <i class="fas fa-terminal"></i> Objetivo Profissional
+                </h3>
+                <div class="card-corpo">
+                    <p>Busco oportunidades para aplicar meus conhecimentos em desenvolvimento de sistemas, <br>contribuindo para soluções tecnológicas inovadoras enquanto aprendo com profissionais experientes.</p>
+                </div>
+            </div>
         </div>
-        <h3>Objetivo Profissional</h3>
-        <div>
-            <p>Busco oportunidades de estágio para aplicar meus conhecimentos em desenvolvimento de sistemas, <br>contribuindo para soluções tecnológicas inovadoras enquanto aprendo com profissionais experientes.</p>
-        </div>
-    <hr>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <hr>
     </section>
-    <section>
-        <h2>Conhecimento Técnicos</h2>
-        <div>
-            <h3>Linguagens e Web</h3>
-            <span>Java</span> <span>Html5</span> <span>CSS</span> <span>JavaScript</span>
-        </div>
-        <div>
-            <h3>Banco de Dados</h3>
-            <span>SQL</span>
-            <span>MySQL</span>
-        </div>
-        <div>
-            <h3>Ferramentas</h3>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>VS Code</span>
-            <span>IntelliJ IDEA</span>
-            <span>Trello</span>
-            <span>Overleaf (LaTeX)</span>
-            <span>Figma</span>
-        </div>
-        <div>
-            <h3>Metodologias Ágeis & Suporte</h3>
-            <span>Scrum</span>
-            <span>Kanban</span>
-            <span>Levantamento de Requisitos</span> <br>
-            <span>Pacote Office (Intermediário)</span>
-            <span> Redes de Computadores (TCP/IP)  e fundamentos de ITIL. 
-            </span> <br>
-            <span>Manutenção de computadores (Hardware/Software)</span>
-        </div>
-    </section>
-    <hr>
-    <section>
-        <h2>Experiência e Projetos</h2>
-        <div>
-            <h3> Técnico de Suporte em Hardware (Autônomo)</h3>
-            <p>Período: 2023 - Presente </p>
-            <ul>
-                <li>Montagem, configuração e manutenção preventiva e corretiva de computadores desktop.</li>
-                <li>Diagnóstico e substituição de componentes de hardware para otimização de performance (Upgrade).</li>
-                <li>Otimização de temperatura e fluxo de ar com limpeza técnica profunda para garantir a máxima estabilidade e prolongar a vida útil dos componentes</li>
-                <li>Instalação e configuração de sistemas operacionais, drivers e softwares essenciais.</li>
-            </ul>
-            <span>Manutenção de computadores (Hardware/Software)</span>
-        </div>
-        <div>
-            <h3>Scrum Master - Projetos UCSAL (Acadêmico)</h3>
-            <p>Período: 2025 - 2026</p>
-            <ul>
-                <li>Coordenar reuniões de planejamento e retrospectiva do sprint.</li>
-                <li>Garantir o cumprimento dos objetivos do sprint e a entrega.</li>
-                <li>Remover impedimentos que afetem o progresso da equipe.</li>
-                <li>Facilitar a comunicação entre os membros da equipe e os stakeholders.</li>
-            </ul>
 
+    <section class="secao-tecnica">
+    <h2 class="titulo-principal">Conhecimentos Técnicos</h2>
+
+    <div class="grid-conhecimentos">
+        <div class="card-tecnico">
+            <h3 class="titulo-card"><i class="fas fa-code"></i> Linguagens e Web</h3>
+            <div class="container-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Html5</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
         </div>
-    </section>
+
+        <div class="card-tecnico">
+            <h3 class="titulo-card"><i class="fas fa-database"></i> Banco de Dados</h3>
+            <div class="container-tags">
+                <span class="tag">SQL</span>
+                <span class="tag">MySQL</span>
+            </div>
+        </div>
+
+        <div class="card-tecnico">
+            <h3 class="titulo-card"><i class="fas fa-tools"></i> Ferramentas</h3>
+            <div class="container-tags">
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">IntelliJ IDEA</span>
+                <span class="tag">Trello</span>
+                <span class="tag">Overleaf (LaTeX)</span>
+                <span class="tag">Figma</span>
+            </div>
+        </div>
+
+        <div class="card-tecnico">
+            <h3 class="titulo-card"><i class="fas fa-project-diagram"></i> Metodologias Ágeis & Suporte</h3>
+            <div class="container-tags">
+                <span class="tag">Scrum</span>
+                <span class="tag">Kanban</span>
+                <span class="tag">Levantamento de Requisitos</span>
+                <span class="tag">Pacote Office(Avançado)</span>
+                <span class="tag">Redes de Computadores (TCP/IP)</span>
+                <span class="tag">Fundamentos de ITIL</span>
+                <span class="tag">Manutenção de Hardware/Software</span>
+            </div>
+        </div>
+    </div>
+</section>
     <hr>
-    <section>
-        <h2>Certificações</h2>
-        <div>
-            <h3>MySQL [40 HORAS] - Curso em Vídeo - abril de 2026</h3>
-            <p>Conclusão do curso de banco de dados MySQL, abrangendo desde os conceitos fundamentais de modelagem de dados até comandos avançados de DDL, DML e gestão de transações (ACID). O curso incluiu a criação de bases de dados, manipulação de tabelas, consultas complexas e manutenção de integridade.</p>
+    <section class="secao-experiencia">
+    <h2 class="titulo-principal">Experiência Profissional e Acadêmica</h2>
+
+    <div class="card-experiencia">
+        <div class="header-xp">
+            <div class="icone-xp"><i class="fas fa-tools"></i></div>
+            <div class="info-xp">
+                <h3>Técnico de Suporte em Hardware (Autônomo)</h3>
+                <p class="periodo">2023 - Presente</p>
+            </div>
         </div>
-    </section>
+        <div class="corpo-xp">
+            <p>Montagem, configuração e manutenção preventiva e corretiva de computadores desktop. Diagnóstico e substituição de componentes de hardware para otimização de performance (Upgrade). Limpeza técnica para garantir estabilidade e prolongar a vida útil dos componentes.</p>
+            <div class="tags-xp">
+                <span class="tag-xp">Hardware</span>
+                <span class="tag-xp">Manutenção</span>
+                <span class="tag-xp">Upgrade</span>
+                <span class="tag-xp">Suporte</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-experiencia">
+        <div class="header-xp">
+            <div class="icone-xp"><i class="fas fa-users-cog"></i></div>
+            <div class="info-xp">
+                <h3>Scrum Master - Projetos UCSAL (Acadêmico)</h3>
+                <p class="periodo">2025 - 2026</p>
+            </div>
+        </div>
+        <div class="corpo-xp">
+            <p>Coordenar reuniões de planejamento e retrospectiva do sprint. Garantir o cumprimento dos objetivos do sprint e a entrega. Remover impedimentos que afetem o progresso da equipe. Facilitar a comunicação entre os membros da equipe e os stakeholders.</p>
+            <div class="tags-xp">
+                <span class="tag-xp">Scrum</span>
+                <span class="tag-xp">Liderança</span>
+                <span class="tag-xp">Gestão de Projetos</span>
+                <span class="tag-xp">Comunicação</span>
+                <span class="tag-xp">Trabalho em Equipe</span>
+            </div>
+        </div>
+    </div>
+</section>
     <hr>
-    <section>
-        <h2>Idiomas</h2>
-        <div>
-            <h3>Português Nativo</h3>
-            <p>Português Nativo</p>
+    <section class="secao-projetos">
+    <hr> <h2 class="titulo-principal">Projetos em Destaque</h2>
+
+    <div class="card-projeto-destaque">
+        <div class="header-projeto">
+            <div class="icone-projeto"><i class="fas fa-chart-line"></i></div>
+            <div class="titulo-projeto">
+                <h3>Data Dashboard: Contabilidade ANS</h3>
+                <p class="subtitulo-projeto">Plataforma Full Stack • Agência Nacional de Saúde Suplementar</p>
+            </div>
         </div>
-        <div>
-            <h3>Inglês Básico/Técnico</h3>
-            <p>Capacidade de leitura e compreensão de documentações oficiais, artigos técnicos e fóruns (Stack Overflow).</p>
+
+        <div class="conteudo-projeto">
+            <p>Plataforma desenvolvida para ingestão, processamento e visualização de dados públicos da ANS, focada em transformar grandes volumes de dados brutos em insights estratégicos.</p>
+            
+            <div class="grid-detalhes-projeto">
+                <div class="detalhe">
+                    <strong><i class="fas fa-server"></i> Backend:</strong>
+                    <p>Pipeline de dados em Java para tratamento e normalização de grandes volumes de dados + API RESTful em Python (FastAPI) para disponibilização eficiente das informações.</p>
+                </div>
+                <div class="detalhe">
+                    <strong><i class="fas fa-desktop"></i> Frontend:</strong>
+                    <p>Aplicação em Vue.js com dashboards interativos, filtros dinâmicos e suporte a grandes volumes de dados em tempo real.</p>
+                </div>
+            </div>
+
+            <div class="diferenciais-projeto">
+                <span class="tag-diferencial">Processamento Automatizado</span>
+                <span class="tag-diferencial">Estrutura Otimizada</span>
+                <span class="tag-diferencial">Arquitetura Escalável</span>
+            </div>
+
+            <div class="resultado-projeto">
+                <strong><i class="fas fa-check-circle"></i> Resultado:</strong>
+                <p>Redução significativa do tempo de análise manual e centralização dos dados em uma interface intuitiva para apoio à tomada de decisão.</p>
+            </div>
         </div>
-        <div>
-            <h3>Espanhol Básico</h3>
-            <p>Capacidade de leitura e compreensão de textos simples, além de comunicação básica em situações cotidianas.</p>
-        </div>
-    </section>
+    </div>
+</section>
     <hr>
-    <section>
-        <h2>Entre em Contato</h2>
-        <div>
-            <h3>Email</h3>
+    <section class="secao-cursos">
+    <hr>
+    <h2 class="titulo-principal">Cursos e Certificações</h2>
+
+    <div class="grid-cursos">
+        <div class="card-curso">
+            <div class="header-curso">
+                <div class="badge-horas">40H</div>
+                <div class="info-curso">
+                    <h3>MySQL - Banco de Dados</h3>
+                    <p class="instituicao">Curso em Vídeo • Abril de 2026</p>
+                </div>
+            </div>
+            <div class="corpo-curso">
+                <p>Modelagem de dados, comandos DDL/DML, gestão de transações (ACID), consultas e manutenção.</p>
+                <div class="tags-curso">
+                    <span class="tag-xp">SQL</span>
+                    <span class="tag-xp">Database</span>
+                    <span class="tag-xp">Back-end</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-curso">
+            <div class="header-curso">
+                <div class="badge-horas">40H</div>
+                <div class="info-curso">
+                    <h3>Java Básico </h3>
+                    <p class="instituicao">Curso em Vídeo • abril de 2026</p>
+                </div>
+            </div>
+            <div class="corpo-curso">
+                <p>Introdução à linguagem Java, orientação a objetos, estruturas de dados e desenvolvimento de aplicações.</p>
+                <div class="tags-curso">
+                    <span class="tag-xp">Java</span>
+                    <span class="tag-xp">Lógica de Programação</span>
+                    <span class="tag-xp">Algoritmos</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-curso placeholder">
+            <p>Próxima certificação em breve...</p>
+        </div>
+    </div>
+</section>
+    <hr>
+    <section class="secao-idiomas">
+    <hr> <h2 class="titulo-principal">Idiomas</h2>
+
+    <div class="grid-idiomas">
+        
+        <div class="card-idioma">
+            <h3 class="nome-idioma">Português Nativo</h3>
+            <p class="descricao-idioma">Comunicação técnica clara e estruturada, com domínio da norma culta, aplicada à elaboração de documentação, especificações de sistemas e facilitação de reuniões orientadas a alinhamento estratégico e tomada de decisão.</p>
+        </div>
+
+        <div class="card-idioma">
+            <h3 class="nome-idioma">Inglês Básico / Técnico</h3>
+            <p class="descricao-idioma">Capacidade de leitura e compreensão de documentações oficiais, artigos técnicos e fóruns (Stack Overflow).</p>
+        </div>
+
+        <div class="card-idioma">
+            <h3 class="nome-idioma">Espanhol Básico</h3>
+            <p class="descricao-idioma">Capacidade de leitura e compreensão de textos simples, além de comunicação básica em situações cotidianas.</p>
+        </div>
+
+    </div>
+</section>
+    <hr>
+    <section class="secao-contato">
+    <hr>
+    <h2 class="titulo-principal">Entre em Contato</h2>
+
+    <div class="grid-contato">
+        
+        <a href="mailto:caldeira.guga@gmail.com" class="card-contato">
+            <div class="header-card-contato">
+                <i class="far fa-envelope"></i>
+                <h3>Email</h3>
+            </div>
             <p>caldeira.guga@gmail.com</p>
-        </div>
-        <div>
-            <h3>Telefone</h3>
+        </a>
+
+        <a href="https://wa.me/5571996168059" target="_blank" class="card-contato">
+            <div class="header-card-contato">
+                <i class="fas fa-external-link-alt"></i>
+                <h3>Telefone</h3>
+            </div>
             <p>(71) 99616-8059</p>
-        </div>
-        <div>
-            <h3>LinkedIn</h3>
+        </a>
+
+        <a href="https://www.linkedin.com/in/gustavo-caldeira-3304013a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="card-contato">
+            <div class="header-card-contato">
+                <i class="fab fa-linkedin-in"></i>
+                <h3>LinkedIn</h3>
+            </div>
             <p>Conecte-se comigo</p>
+        </a>
+
+    </div>
+</section>
+<section class="secao-disponibilidade">
+    <div class="card-status-final">
+        <div class="status-badge">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Localizado em Salvador, BA • Disponível para oportunidades de estágio</span>
         </div>
-    </section>
-    <section>
-        <p>Localizado em Salvador - BA • Disponível para oportunidades</p>
-        <p>Sempre disposto para conversas sobre tecnologia, desenvolvimento e novas oportunidades</p>
-    </section>
-    <hr>
-    <p>Feito por Gustavo Caldeira usando HTML, CSS e JavaScript</p>
-
-
+        <p class="chamada-final">Sempre disposto para conversas sobre tecnologia, desenvolvimento e novas oportunidades</p>
+    </div>
+</section>
+<footer class="rodapé-principal">
+    <div class="container-rodapé">
+        <p class="copyright">© 2026 Gustavo Caldeira.</p>
+        <p class="desenvolvido-com">Desenvolvido com Html, CSS e JavaScript</p>
+    </div>
+</footer>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </body>
 </html>
