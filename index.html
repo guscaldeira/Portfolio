@@ -9,12 +9,13 @@
 <body>
     <section class="img-fundo">
             <section class="section-header">
-                <nav class="meu-menu">
+                <nav id="minha-navbar" class="meu-menu navbar">
                     <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experiencia">Experiência</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#secao-sobre">Sobre</a></li>
+                        <li><a href="#secao-skills">Skills</a></li>
+                        <li><a href="#secao-experiencia">Experiência</a></li>
+                        <li><a href="#secao-projetos">Projetos</a></li>
+                        <li><a href="#secao-contato">Contato</a></li>
                     </ul>
                 </nav>
             </section>
@@ -25,7 +26,7 @@
                 <p class="tagline">Desenvolvedor Java • Estudante de Engenharia de Software</p>
                 <p class="descricao">Focado em desenvolvimento de sistemas e soluções tecnológicas. Experiência com Java, Web Development (Html, CSS e JavaScript), SQL e metodologias ágeis. Sempre buscando aprender e contribuir para projetos desafiadores.</p>
                 <div class="div-botoes">
-                    <a href="#contato" class="btn-contato">Entre em Contato</a>
+                    <a href="#secao-contato" class="btn-contato">Entre em Contato</a>
                     <a href="https://github.com/guscaldeira" target="_blank" rel="external" class="btn-github">
                     <i class="fab fa-github"></i> GitHub </a>
                 </div>
@@ -33,7 +34,7 @@
     </section>
     <hr>
 
-    <section class="secao-sobre">
+    <section class="secao-sobre escondido " id="secao-sobre">
         <h2 class="titulo-principal">Sobre Mim</h2>
         <div class="sobre-conteudo-flex">
             <div class="card-sobre">
@@ -59,7 +60,7 @@
         <hr>
     </section>
 
-    <section class="secao-tecnica">
+    <section class="secao-tecnica escondido" id="secao-skills">
     <h2 class="titulo-principal">Conhecimentos Técnicos</h2>
 
     <div class="grid-conhecimentos">
@@ -109,7 +110,7 @@
     </div>
 </section>
     <hr>
-    <section class="secao-experiencia">
+    <section class="secao-experiencia escondido" id="secao-experiencia">
     <h2 class="titulo-principal">Experiência Profissional e Acadêmica</h2>
 
     <div class="card-experiencia">
@@ -152,7 +153,7 @@
     </div>
 </section>
     <hr>
-    <section class="secao-projetos">
+    <section class="secao-projetos escondido" id="secao-projetos">
     <hr> <h2 class="titulo-principal">Projetos em Destaque</h2>
 
     <div class="card-projeto-destaque">
@@ -192,7 +193,7 @@
     </div>
 </section>
     <hr>
-    <section class="secao-cursos">
+    <section class="secao-cursos escondido" id="secao-cursos">
     <hr>
     <h2 class="titulo-principal">Cursos e Certificações</h2>
 
@@ -238,7 +239,7 @@
     </div>
 </section>
     <hr>
-    <section class="secao-idiomas">
+    <section class="secao-idiomas escondido">
     <hr> <h2 class="titulo-principal">Idiomas</h2>
 
     <div class="grid-idiomas">
@@ -261,7 +262,7 @@
     </div>
 </section>
     <hr>
-    <section class="secao-contato">
+    <section class="secao-contato escondido" id="secao-contato">
     <hr>
     <h2 class="titulo-principal">Entre em Contato</h2>
 
@@ -293,7 +294,7 @@
 
     </div>
 </section>
-<section class="secao-disponibilidade">
+<section class="secao-disponibilidade escondido">
     <div class="card-status-final">
         <div class="status-badge">
             <i class="fas fa-map-marker-alt"></i>
@@ -311,5 +312,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<script src="estilos/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +20,17 @@ hr {
     margin: 40px 0;                 
     opacity: 1.0;                  
 }
+.escondido {
+  opacity: 0;
+  transform: translateY(50px); 
+  transition: all 0.8s ease;
+}
+
+.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .img-fundo {
     background-image: url('../img/imgfundo.png');
@@ -51,7 +65,7 @@ hr {
     transition: color 0.3s;    
 }
 .meu-menu ul li a:hover {
-    color: #a1eafa;            
+    color: #00e5ff;            
 }
 .section-hero {
     min-height: 72vh;
@@ -119,7 +133,7 @@ hr {
     background-color: #101026;
     padding: 60px 20px;       
     color: #a3b3cc;           
-    font-family: sans-serif;   
+    font-family: sans-serif;
 }
 .titulo-principal {
     color: #00e5ff;           
@@ -142,6 +156,8 @@ hr {
     min-width: 300px;         
     max-width: 500px;          
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    
+    
 }
 .titulo-icone {
     color: #f8f8ff;            
@@ -152,7 +168,7 @@ hr {
     gap: 12px;                 
 }
 .titulo-icone i {
-    color: #00e5ff;           
+    color: #00e5ff;       
 }
 .card-corpo p {
     font-size: 16px;
@@ -214,7 +230,7 @@ hr {
     font-family: 'Courier New', Courier, monospace; 
 }
 .secao-experiencia {
-      background-color: #101026;
+    background-color: #101026;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
@@ -230,6 +246,7 @@ hr {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 .card-experiencia {
     background-color: #1a2333;
@@ -365,7 +382,7 @@ hr {
     color: #00e5ff;
 }
 .secao-cursos {
-      background-color: #101026;
+    background-color: #101026;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
