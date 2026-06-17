@@ -317,6 +317,7 @@ hr {
     max-width: 1000px;
     width: 100%;
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 .header-projeto {
     display: flex;
@@ -380,6 +381,30 @@ hr {
 }
 .resultado-projeto strong {
     color: #00e5ff;
+}
+.card-projeto-destaque:hover{
+    transform: translateY(-5px);
+    border-color: #00e5ff;
+}
+.container-link-projeto {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.link-saiba-mais {
+    color: #00e5ff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.link-saiba-mais:hover {
+    color: #7b2ff7; 
+    transform: translateX(3px);
 }
 .secao-cursos {
     background-color: #101026;
@@ -494,6 +519,19 @@ hr {
     gap: 20px;
     max-width: 1000px;
     width: 100%;
+    margin-bottom: 20px;
+}
+.card-contato, .card-status-final {
+    background-color: #1a2333;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 30px;
+    text-decoration: none; 
+    transition: all 0.3s ease;
+    display: block;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .card-contato {
     background-color: #1a2333;
@@ -504,6 +542,11 @@ hr {
     transition: all 0.3s ease;
 }
 .card-contato:hover {
+    transform: translateY(-5px);
+    border-color: #00e5ff;
+    box-shadow: 0 5px 15px rgba(0, 229, 255, 0.1);
+}
+.card-contato:hover, .card-status-final:hover {
     transform: translateY(-5px);
     border-color: #00e5ff;
     box-shadow: 0 5px 15px rgba(0, 229, 255, 0.1);
@@ -528,11 +571,13 @@ hr {
     font-size: 18px;
     margin: 0;
 }
-.secao-disponibilidade {
-      background-color: #101026;
-    padding: 40px 20px 80px 20px; 
-    display: flex;
-    justify-content: center;
+.card-contato h3, .card-contato p {
+    color: #00e5ff !important;
+    transition: color 0.3s ease; 
+    
+}
+.card-contato:hover h3,.card-contato:hover p {
+    color: #7b2ff7 !important;
 }
 .card-status-final {
     background-color: #1a2333;
@@ -543,6 +588,12 @@ hr {
     width: 100%;
     text-align: center; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.secao-disponibilidade {
+      background-color: #101026;
+    padding: 40px 20px 80px 20px; 
+    display: flex;
+    justify-content: center;
 }
 .status-badge {
     color: #f8f8ff;
